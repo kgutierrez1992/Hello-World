@@ -15,7 +15,7 @@ To run this program, you will need the following packages installed:
 
 ### Windows
 
-1. In a web browser, navigate to [MSYS2.org](https://www.msys2.org/)
+1. In a web browser, navigate to [https://wwww.MSYS2.org](https://www.msys2.org/)
 2. Download the latest installation of MSYS2.
 3. Follow the complete installation instructions listed on the home page.
 4. In your MSYS2 session, enter the following command:
