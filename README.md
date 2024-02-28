@@ -9,7 +9,7 @@ This program is designed to print the text "Hello World" to a terminal screen.
 To run this program, you will need the following packages installed:
 
 * A C++ compiler.
-* cmake version 3.21 <ins>or higher</ins>.
+* CMake version 3.21 <ins>or higher</ins>.
 
 ### Installation
 
@@ -30,7 +30,7 @@ To run this program, you will need the following packages installed:
     gcc --version
     ```
 
-6. In a web browser, navigate to [https://www.cmake.org](https://cmake.org/download/) to download and install the latest cmake binary.
+6. In a web browser, navigate to [https://www.cmake.org](https://cmake.org/download/) to download and install the latest CMake binary.
 
 ### MacOS
 
@@ -48,7 +48,7 @@ To run this program, you will need the following packages installed:
     clang --version
     ```
 
-3. In a web browser, navigate to [https://www.cmake.org](https://cmake.org/download/) to download and install the latest cmake binary.
+3. In a web browser, navigate to [https://www.cmake.org](https://cmake.org/download/) to download and install the latest CMake binary.
 
 ### Linux Installation
 
@@ -66,7 +66,7 @@ To run this program, you will need the following packages installed:
     g++ --version
     ```
 
-3. In a web browser, navigate to [https://www.cmake.org](https://cmake.org/download/) to download and install the latest cmake binary.
+3. In a web browser, navigate to [https://www.cmake.org](https://cmake.org/download/) to download and install the latest CMake binary.
 
 #### Red Hat-based OS
 
@@ -82,7 +82,7 @@ To run this program, you will need the following packages installed:
     g++ --version
     ```
 
-3. In a web browser, navigate to [https://www.cmake.org](https://cmake.org/download/) to download and install the latest cmake binary.
+3. In a web browser, navigate to [https://www.cmake.org](https://cmake.org/download/) to download and install the latest CMake binary.
 
 ## Build Instructions
 
@@ -98,7 +98,7 @@ To run this program, you will need the following packages installed:
     cd Hello-World/build
     ```
 
-3. Using cmake, generate the the necessary build files with the provided CMakeLists.txt file to the build directory:
+3. Using CMake, generate the the necessary build files with the provided CMakeLists.txt file to the build directory:
 
     ```bash
     cmake ../src
