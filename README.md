@@ -26,7 +26,7 @@ To run this program, you will need the following packages installed:
 
 5. Verify that the installation was successful by entering the following command into the command prompt/powershell.
 
-    ```powershell
+    ```
     gcc --version
     ```
 
@@ -98,7 +98,7 @@ To run this program, you will need the following packages installed:
     cd Hello-World/build
     ```
 
-3. Using CMake, generate the the necessary build files with the provided CMakeLists.txt file to the build directory:
+3. Using CMake, generate the necessary build files with the provided CMakeLists.txt file to the build directory:
 
     ```bash
     cmake ../src
