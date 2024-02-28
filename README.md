@@ -92,25 +92,37 @@ To run this program, you will need the following packages installed:
     git clone https://github.com/kgutierrez1992/Hello-World.git
     ```
 
-2. Navigate to the "Hello-World/build" directory.
+2. Navigate to the "Hello-World" directory.
 
     ```bash
-    cd Hello-World/build
+    cd Hello-World
     ```
 
-3. Using CMake, generate the necessary build files with the provided CMakeLists.txt file to the build directory:
+3. Create a new directory called "build".
+
+    ```bash
+    mkdir build
+    ```
+
+4. Navigate to the "build" directory.
+
+    ```bash
+    cd build
+    ```
+
+5. Using CMake, generate the necessary build files with the provided CMakeLists.txt file to the build directory:
 
     ```bash
     cmake ../src
     ```
 
-4. With the files generated, build the source files into an executable file with the following command:
+6. With the files generated, build the source files into an executable file with the following command:
 
     ```bash
     cmake --build .
     ```
 
-5. Launch the program with the following command:
+7. Launch the program with the following command:
 
     ```bash
     ./hello_world
