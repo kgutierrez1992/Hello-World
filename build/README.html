@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Hello World</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="hello-world">Hello World</h1>
+<h2 id="about">About</h2>
+<p>This program is designed to print the text &quot;Hello World&quot; to a terminal screen.</p>
+<h2 id="requirements">Requirements</h2>
+<p>To run this program, you will need the following packages installed:</p>
+<ul>
+<li>A C++ compiler.</li>
+<li>cmake version 3.21 <ins>or higher</ins>.</li>
+</ul>
+<h3 id="installation">Installation</h3>
+<h3 id="windows">Windows</h3>
+<ol>
+<li>
+<p>In a web browser, navigate to <a href="https://www.msys2.org/">MSYS2.org</a></p>
+</li>
+<li>
+<p>Download the latest installation of MSYS2.</p>
+</li>
+<li>
+<p>Follow the complete installation instructions listed on the home page.</p>
+</li>
+<li>
+<p>In your MSYS2 session, enter the following command:</p>
+<pre><code class="language-bash">pacman -S mingw-w64-ucrt-x86_64-gcc
+</code></pre>
+</li>
+<li>
+<p>Verify that the installation was successful by entering the following command into the command prompt/powershell.</p>
+<pre><code class="language-powershell">gcc <span class="hljs-literal">--version</span>
+</code></pre>
+</li>
+<li>
+<p>In a web browser, navigate to <a href="https://cmake.org/download/">https://www.cmake.org</a> to download and install the latest cmake binary.</p>
+</li>
+</ol>
+<h3 id="macos">MacOS</h3>
+<h4 id="installing-the-clang-compiler">Installing the clang compiler</h4>
+<ol>
+<li>
+<p>Install the xcode CLI developer tools with the following command:</p>
+<pre><code class="language-bash">xcode-select --install
+</code></pre>
+</li>
+<li>
+<p>Open a terminal session and verify that clang is installed by entering the following command:</p>
+<pre><code class="language-bash">clang --version
+</code></pre>
+</li>
+<li>
+<p>In a web browser, navigate to <a href="https://cmake.org/download/">https://www.cmake.org</a> to download and install the latest cmake binary.</p>
+</li>
+</ol>
+<h3 id="linux-installation">Linux Installation</h3>
+<h4 id="debian-based-os">Debian-based OS</h4>
+<ol>
+<li>
+<p>Open a new terminal session and enter the following command:</p>
+<pre><code>sudo apt-get install g++
+</code></pre>
+</li>
+<li>
+<p>Verify the installation was successful by entering the following command in your terminal session:</p>
+<pre><code class="language-shell">g++ --version
+</code></pre>
+</li>
+<li>
+<p>In a web browser, navigate to <a href="https://cmake.org/download/">https://www.cmake.org</a> to download and install the latest cmake binary.</p>
+</li>
+</ol>
+<h4 id="red-hat-based-os">Red Hat-based OS</h4>
+<ol>
+<li>
+<p>Open a new terminal session and enter the following command:</p>
+<pre><code class="language-bash">sudo yum install g++
+</code></pre>
+</li>
+<li>
+<p>Verify the installation was successful by entering the following command in your terminal session:</p>
+<pre><code class="language-bash">g++ --version
+</code></pre>
+</li>
+<li>
+<p>In a web browser, navigate to <a href="https://cmake.org/download/">https://www.cmake.org</a> to download and install the latest cmake binary.</p>
+</li>
+</ol>
+<h2 id="build-instructions">Build Instructions</h2>
+<ol>
+<li>
+<p>In a terminal window, clone this repository to your local machine with:</p>
+<pre><code class="language-git">git clone https://github.com/kgutierrez1992/Hello-World.git
+</code></pre>
+</li>
+<li>
+<p>Navigate to the &quot;Hello-World/build&quot; directory.</p>
+<pre><code class="language-bash"><span class="hljs-built_in">cd</span> Hello-World/build
+</code></pre>
+</li>
+<li>
+<p>Using cmake, generate the the necessary build files with the provided CMakeLists.txt file to the build directory:</p>
+<pre><code class="language-bash">cmake ../src
+</code></pre>
+</li>
+<li>
+<p>With the files generated, build the source files into an executable file with the following command:</p>
+<pre><code class="language-bash">cmake --build .
+</code></pre>
+</li>
+<li>
+<p>Launch the program with the following command:</p>
+<pre><code class="language-bash">./hello_world
+</code></pre>
+</li>
+</ol>
+
+            
+            
+        </body>
+        </html>
